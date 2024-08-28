@@ -1,12 +1,13 @@
 # Trading by Indicators
 
 ## STRATEGY
-- [ ] Uses Metropolis for search space optimization.
-- [ ] Core signal given by RSI thresholds
-- [ ] Parameters of search space: target_percent, leverage, rsi_oversold, rsi_overboughty, risk_per_trade, intervall_step
+- [ ] Signal processing of RSI thresholds -> 04-signal.py
+- [ ] Use of dynamic position size: Chaikin volatility index, high volatility environments should have higher target percent values.
+- [ ] Preexisting position is closed if target percent is met or liquidation threshold or opposite signal is triggered.
+- [ ] Multiple positions of same directionality or opposing directionality not decided yet 
+- [ ] Parameters of search space: target_percent, risk_per_trade, leverage, rsi_oversold, rsi_overbought, intervall_step
 
 ## TODO
-- [ ] add partial_take_profit parameter
-- [ ] add additional core signal parameters: ATR (average true range, bollinger bands, MACD)
-- [ ] implement API in 01-algorithmic.py
-- [ ] more robust statistical testing in 01-backtest-bruteforce.py
+- [ ] dynamic target percent, leverage, risk per trade as a function of Chaikin Volatility Index
+- [ ] implement API
+- [ ] more robust statistical testing in 01-bruteforce.py
