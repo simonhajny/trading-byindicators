@@ -1,13 +1,10 @@
 # Trading by Indicators
 
-## STRATEGY
-- [ ] Signal processing of RSI thresholds -> 04-signal.py
-- [ ] Use of dynamic position size: Chaikin volatility index, high volatility environments should have higher target percent values.
-- [ ] Preexisting position is closed if target percent is met or liquidation threshold or opposite signal is triggered.
-- [ ] Multiple positions of same directionality or opposing directionality not decided yet 
-- [ ] Parameters of search space: target_percent, risk_per_trade, leverage, rsi_oversold, rsi_overbought, intervall_step
+## 03-SIGNAL-PLOT.py
+- [ ] contains 12 diffrent RSI types, 3 diffrent windows RSI, 3 composite RSIs (diffrent ways of adding the 3 windows) and for each of the previous 6 RSIs a composition with Chaikin Volatility index gives another 6 RSIs
+- [ ] the parameters are: ALPHA, BETA, LONGTHRESHOLD, SHORTHRESHOLD; the first two determine the nature of the composite of CVI and RSIs, whereas the last two are criteria for trade signal logging
+- [ ] contains a optimization class which optimizes accuracy for the previously mentioned parameters
 
-## TODO
-- [ ] dynamic target percent, leverage, risk per trade as a function of Chaikin Volatility Index
-- [ ] implement API
-- [ ] more robust statistical testing in 01-bruteforce.py
+## REALTIME.py
+- [ ] accesses signals from 03-SIGNAL-PLOT.py 
+- [ ] the parametersare: position_size, leverage, target_percent, stop_loss percent
