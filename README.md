@@ -6,5 +6,5 @@
 - [ ] contains a optimization class which optimizes accuracy for the previously mentioned parameters
 
 ## REALTIME.py
-- [ ] accesses signals from 03-SIGNAL-PLOT.py 
+- [ ] accesses signals
 - [ ] the parametersare: position_size, leverage, target_percent, stop_loss percent
