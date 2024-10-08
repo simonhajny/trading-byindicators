@@ -10,6 +10,6 @@
 - [ ] the parameters are: ALPHA, BETA, LONGTHRESHOLD, SHORTHRESHOLD; the first two determine the nature of the composite of CVI and RSIs, whereas the last two are criteria for trade signal logging
 - [ ] contains a optimization class which optimizes accuracy for the previously mentioned parameters
 
-## REALTIME.py
+## 02-REALTIME.py
 - [ ] usese ccct library
 - [ ] the parametersare: position_size, leverage, target_percent, stop_loss percent
